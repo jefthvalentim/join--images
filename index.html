@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{ max-width: 1400px; margin: auto; display: flex ; flex-wrap: wrap; }
+        .col{ max-width: 400px; margin: auto; border: 1px solid rgba(0, 0, 0, .8); background: #000; }
+        .container .col img{ max-width: 100%;} 
+
+        @media (min-width: 768px){
+
+           .container .col{ max-width: calc(50% - 2px); padding: 0; margin: 0;}
+           .main{ display: flex; align-items: center; height: 100vh;}
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="container">
+            <div class="col cor-1">
+                <img src="equipa_1.jpg" alt="">
+            </div>
+            <div class="col cor-2">
+                <img src="equipa_2.jpg" alt=""></div>
+            <div class="col cor-3">
+                <img src="equipa_3.jpg" alt=""></div>
+            <div class="col cor-4">
+                <img src="equipa_4.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
